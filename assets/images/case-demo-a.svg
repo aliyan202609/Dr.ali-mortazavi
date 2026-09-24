@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 820">
+<defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#152331"/><stop offset=".55" stop-color="#77818b"/><stop offset="1" stop-color="#d7d0c4"/></linearGradient></defs>
+<rect width="1200" height="820" fill="url(#g)"/><ellipse cx="600" cy="410" rx="250" ry="310" fill="#efe9df" opacity=".65"/>
+<path d="M480 260Q600 175 720 260M470 350Q525 315 570 350M630 350Q675 315 730 350M520 500Q600 545 680 500M540 585Q600 615 660 585" fill="none" stroke="#fff" stroke-width="5" opacity=".7"/>
+<path d="M600 95V725M315 410H885M380 180H820M380 640H820" stroke="#fff" stroke-width="2" opacity=".16"/>
+<text x="600" y="765" text-anchor="middle" fill="#fff" font-family="Arial" font-size="28">تصویر نمایشی — جایگزین با پرونده واقعی بیمار</text></svg>
