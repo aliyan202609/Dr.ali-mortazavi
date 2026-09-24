@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>دکتر علی مرتضوی | متخصص جراحی فک و صورت و دندانپزشک</title>
+<meta name="description" content="دکتر علی مرتضوی، متخصص جراحی فک و صورت و دندانپزشک. دقت علمی، رویکرد انسانی و نتیجه‌ای طبیعی و متناسب با چهره شما.">
+<meta property="og:title" content="دکتر علی مرتضوی | متخصص جراحی فک و صورت">
+<meta property="og:description" content="جراحی فک و صورت با تمرکز بر عملکرد، تناسب و نتیجه طبیعی.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Physician",
+  "name": "دکتر علی مرتضوی",
+  "medicalSpecialty": ["OralSurgery", "MaxillofacialSurgery", "Dentistry"],
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "تبریز",
+    "streetAddress": "۱۷ شهریور جدید، روبروی بستنی وحید، برج سپید، طبقه ۸"
+  },
+  "telephone": "041-35575220"
+}
+</script>
+<style>
+  :root{
+    --navy-950:#070b14;
+    --navy-900:#0c1424;
+    --navy-800:#121c30;
+    --navy-700:#1b2740;
+    --ivory:#f4efe4;
+    --ivory-dim:#cfc9ba;
+    --gold:#c9a15e;
+    --gold-soft:#e4cfa0;
+    --steel:#5f7691;
+    --line:rgba(244,239,228,0.12);
+    --radius-sm:4px;
+    --radius-md:10px;
+    --container:1240px;
+    --sp-1:8px; --sp-2:16px; --sp-3:24px; --sp-4:40px; --sp-5:64px; --sp-6:96px; --sp-7:140px;
+    --ease:cubic-bezier(.22,.61,.36,1);
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation-duration:.01ms!important;transition-duration:.01ms!important}}
+  body{
+    background:var(--navy-950);
+    color:var(--ivory);
+    font-family:'Vazirmatn',sans-serif;
+    font-feature-settings:"ss01" 1;
+    line-height:1.75;
+    overflow-x:hidden;
+  }
+  img{max-width:100%;display:block}
+  a{color:inherit;text-decoration:none}
+  button{font-family:inherit;cursor:pointer;background:none;border:none;color:inherit}
+  .wrap{max-width:var(--container);margin:0 auto;padding:0 var(--sp-3)}
+  section{position:relative}
+  :focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+
+  /* ---------- Header ---------- */
+  header{
+    position:fixed;inset-inline:0;top:0;z-index:100;
+    padding:22px 0;
+    transition:padding .4s var(--ease),background .4s var(--ease),border-color .4s var(--ease);
+    border-bottom:1px solid transparent;
+  }
+  header.scrolled{
+    padding:12px 0;
+    background:rgba(7,11,20,.86);
+    backdrop-filter:blur(14px);
+    border-color:var(--line);
+  }
+  .header-row{display:flex;align-items:center;justify-content:space-between;gap:24px}
+  .brand{display:flex;align-items:center;gap:12px}
+  .brand-mark{
+    width:40px;height:40px;border:1px solid var(--gold);border-radius:50%;
+    display:flex;align-items:center;justify-content:center;
+    font-size:13px;letter-spacing:1px;color:var(--gold);flex-shrink:0;
+  }
+  .brand-text b{display:block;font-size:16px;font-weight:600}
+  .brand-text span{display:block;font-size:11.5px;color:var(--ivory-dim)}
+  nav.primary-nav{display:flex;align-items:center;gap:2px}
+  nav.primary-nav a{
+    padding:10px 16px;font-size:14.5px;color:var(--ivory-dim);position:relative;transition:color .25s;
+  }
+  nav.primary-nav a::after{
+    content:"";position:absolute;right:16px;left:16px;bottom:4px;height:1px;background:var(--gold);
+    transform:scaleX(0);transform-origin:center;transition:transform .3s var(--ease);
+  }
+  nav.primary-nav a:hover{color:var(--ivory)}
+  nav.primary-nav a:hover::after{transform:scaleX(1)}
+  .header-cta{display:flex;align-items:center;gap:14px}
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;
+    padding:13px 26px;font-size:14px;border-radius:2px;
+    transition:transform .25s var(--ease),background .25s,border-color .25s,color .25s;
+    white-space:nowrap;
+  }
+  .btn-gold{background:var(--gold);color:var(--navy-950);font-weight:600}
+  .btn-gold:hover{background:var(--gold-soft);transform:translateY(-2px)}
+  .btn-ghost{border:1px solid var(--line);color:var(--ivory)}
+  .btn-ghost:hover{border-color:var(--gold);color:var(--gold)}
+  .menu-toggle{display:none;width:44px;height:44px;align-items:center;justify-content:center;flex-direction:column;gap:5px}
+  .menu-toggle span{width:22px;height:1.5px;background:var(--ivory)}
+
+  /* ---------- Mobile nav ---------- */
+  .mobile-nav{
+    position:fixed;inset:0;z-index:200;background:var(--navy-950);
+    display:flex;flex-direction:column;justify-content:center;padding:var(--sp-4);
+    opacity:0;visibility:hidden;transform:translateY(-12px);
+    transition:opacity .4s var(--ease),transform .4s var(--ease),visibility 0s .4s;
+  }
+  .mobile-nav.open{opacity:1;visibility:visible;transform:translateY(0);transition:opacity .4s var(--ease),transform .4s var(--ease)}
+  .mobile-nav-close{position:absolute;top:22px;left:22px;width:44px;height:44px;display:flex;align-items:center;justify-content:center;font-size:22px;color:var(--ivory)}
+  .mobile-nav a{
+    display:block;font-size:clamp(24px,7vw,34px);padding:14px 0;border-bottom:1px solid var(--line);color:var(--ivory);
+    opacity:0;transform:translateY(14px);transition:opacity .5s var(--ease),transform .5s var(--ease);
+  }
+  .mobile-nav.open a{opacity:1;transform:translateY(0)}
+  .mobile-nav.open a:nth-child(1){transition-delay:.08s}
+  .mobile-nav.open a:nth-child(2){transition-delay:.14s}
+  .mobile-nav.open a:nth-child(3){transition-delay:.20s}
+  .mobile-nav.open a:nth-child(4){transition-delay:.26s}
+  .mobile-nav.open a:nth-child(5){transition-delay:.32s}
+  .mobile-nav.open a:nth-child(6){transition-delay:.38s}
+  .mobile-nav-foot{margin-top:var(--sp-4);color:var(--ivory-dim);font-size:14px}
+  .mobile-nav-foot a{display:inline;color:var(--gold);border:none}
+
+  /* ---------- Hero ---------- */
+  .hero{min-height:100svh;display:flex;align-items:center;padding-top:120px;padding-bottom:60px;position:relative}
+  .hero::before{
+    content:"";position:absolute;inset:0;
+    background:radial-gradient(80% 60% at 75% 20%,rgba(201,161,94,.08),transparent 60%),
+               radial-gradient(60% 50% at 15% 80%,rgba(95,118,145,.10),transparent 60%);
+    pointer-events:none;
+  }
+  .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:var(--sp-6);align-items:center;position:relative}
+  .eyebrow{color:var(--gold);font-size:14px;letter-spacing:.3px;margin-bottom:var(--sp-2);display:flex;align-items:center;gap:10px}
+  .eyebrow::before{content:"";width:28px;height:1px;background:var(--gold)}
+  h1.hero-title{font-size:clamp(34px,4.6vw,58px);font-weight:700;line-height:1.28;margin-bottom:var(--sp-3)}
+  h1.hero-title em{font-style:normal;color:var(--gold-soft)}
+  .hero-sub{font-size:17px;color:var(--ivory-dim);max-width:52ch;margin-bottom:var(--sp-4)}
+  .hero-actions{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:var(--sp-4)}
+  .hero-meta{display:flex;gap:var(--sp-4);flex-wrap:wrap;color:var(--ivory-dim);font-size:13.5px}
+  .hero-meta div{display:flex;align-items:center;gap:8px}
+  .hero-meta svg{width:16px;height:16px;stroke:var(--gold);flex-shrink:0}
+  .hero-portrait{position:relative}
+  .hero-portrait-frame{
+    position:relative;border-radius:var(--radius-md);overflow:hidden;aspect-ratio:4/5;
+    border:1px solid var(--line);
+  }
+  .hero-portrait-frame img{width:100%;height:100%;object-fit:cover;object-position:top center;filter:saturate(.92) contrast(1.03)}
+  .hero-portrait-frame::after{
+    content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(7,11,20,.55),transparent 45%);
+  }
+  .hero-portrait-caption{
+    position:absolute;bottom:-1px;right:0;left:0;padding:20px 22px;
+    display:flex;justify-content:space-between;align-items:flex-end;
+  }
+  .hero-portrait-caption b{font-size:16px;display:block}
+  .hero-portrait-caption span{font-size:12.5px;color:var(--ivory-dim)}
+  .scroll-cue{position:absolute;bottom:0;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;color:var(--ivory-dim);font-size:12px}
+  .scroll-cue .line{width:1px;height:34px;background:linear-gradient(var(--gold),transparent)}
+
+  /* ---------- Section shell ---------- */
+  .section-head{max-width:640px;margin-bottom:var(--sp-5)}
+  .section-head .eyebrow{margin-bottom:var(--sp-2)}
+  .section-head h2{font-size:clamp(26px,3vw,38px);font-weight:700;line-height:1.35}
+  .section-head p{color:var(--ivory-dim);margin-top:var(--sp-2);font-size:15.5px;max-width:56ch}
+  .pad{padding:var(--sp-6) 0}
+  .light{background:var(--ivory);color:var(--navy-950)}
+  .light .ivory-dim-txt{color:#5c5646}
+  .light .eyebrow{color:#8a6a34}
+
+  /* ---------- Video ---------- */
+  .video-block{display:grid;grid-template-columns:1.3fr .9fr;gap:var(--sp-5);align-items:center}
+  .video-card{position:relative;border-radius:var(--radius-md);overflow:hidden;aspect-ratio:16/9;border:1px solid var(--line);cursor:pointer;background:var(--navy-800)}
+  .video-card img{width:100%;height:100%;object-fit:cover;object-position:top center;transition:transform .8s var(--ease)}
+  .video-card:hover img{transform:scale(1.04)}
+  .video-card::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(7,11,20,.72),rgba(7,11,20,.1) 55%)}
+  .play-btn{
+    position:absolute;top:50%;right:50%;transform:translate(50%,-50%);z-index:2;
+    width:74px;height:74px;border-radius:50%;border:1px solid rgba(244,239,228,.5);
+    display:flex;align-items:center;justify-content:center;backdrop-filter:blur(4px);
+    background:rgba(7,11,20,.35);transition:transform .3s var(--ease),background .3s;
+  }
+  .video-card:hover .play-btn{transform:translate(50%,-50%) scale(1.08);background:var(--gold);border-color:var(--gold)}
+  .play-btn svg{width:20px;height:20px;fill:var(--ivory);margin-inline-start:3px}
+  .video-card:hover .play-btn svg{fill:var(--navy-950)}
+  .video-meta{position:absolute;bottom:20px;right:20px;left:20px;z-index:2;display:flex;justify-content:space-between;font-size:13px;color:var(--ivory-dim)}
+  .video-copy p{color:var(--ivory-dim);margin:var(--sp-2) 0 var(--sp-3)}
+  .video-facts{display:flex;flex-direction:column;gap:12px}
+  .video-facts div{display:flex;gap:10px;align-items:flex-start;font-size:14px;color:var(--ivory-dim)}
+  .video-facts svg{width:16px;height:16px;stroke:var(--gold);flex-shrink:0;margin-top:3px}
+
+  /* ---------- Services ---------- */
+  .services-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+  .service-card{background:var(--navy-950);padding:var(--sp-4) var(--sp-3);transition:background .3s}
+  .service-card:hover{background:var(--navy-900)}
+  .service-icon{width:38px;height:38px;stroke:var(--gold);margin-bottom:var(--sp-3)}
+  .service-card h3{font-size:16px;font-weight:600;margin-bottom:8px}
+  .service-card p{font-size:13.5px;color:var(--ivory-dim)}
+
+  /* ---------- Portfolio / before-after ---------- */
+  .cases-strip{display:flex;gap:var(--sp-3);overflow-x:auto;padding-bottom:8px;scrollbar-width:none}
+  .cases-strip::-webkit-scrollbar{display:none}
+  .case-card{flex:0 0 300px}
+  .ba-slider{
+    position:relative;aspect-ratio:4/5;border-radius:var(--radius-md);overflow:hidden;
+    border:1px solid var(--line);touch-action:pan-y;user-select:none;background:var(--navy-800);
+  }
+  .ba-slider .ba-before,.ba-slider .ba-after{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .ba-slider .ba-after-wrap{position:absolute;inset:0;overflow:hidden}
+  .ba-handle{
+    position:absolute;top:0;bottom:0;width:2px;background:var(--gold);
+    cursor:ew-resize;display:flex;align-items:center;justify-content:center;
+  }
+  .ba-handle-knob{
+    width:38px;height:38px;border-radius:50%;background:var(--gold);
+    display:flex;align-items:center;justify-content:center;gap:2px;
+    box-shadow:0 4px 14px rgba(0,0,0,.35);
+  }
+  .ba-handle-knob svg{width:12px;height:12px;stroke:var(--navy-950)}
+  .ba-label{position:absolute;top:14px;font-size:11.5px;letter-spacing:.5px;padding:5px 11px;background:rgba(7,11,20,.6);backdrop-filter:blur(3px);border-radius:2px}
+  .ba-label.before{right:14px}
+  .ba-label.after{left:14px}
+  .ba-demo-tag{position:absolute;bottom:14px;right:14px;left:14px;font-size:11px;color:var(--ivory-dim);text-align:center;background:rgba(7,11,20,.55);padding:6px 8px;border-radius:2px}
+  .case-info{display:flex;justify-content:space-between;align-items:center;margin-top:14px}
+  .case-info b{font-size:14.5px;font-weight:600}
+  .case-info span{font-size:12.5px;color:var(--ivory-dim)}
+
+  /* placeholder face art for demo before/after (no real patient photos used) */
+  .ph-face{width:100%;height:100%;display:block}
+
+  /* ---------- Trust ---------- */
+  .trust-strip{background:var(--navy-900);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+  .trust-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--sp-3)}
+  .trust-item{padding:var(--sp-4) 0;border-inline-start:1px solid var(--line)}
+  .trust-item:first-child{border-inline-start:none}
+  .trust-item svg{width:26px;height:26px;stroke:var(--gold);margin-bottom:14px}
+  .trust-item b{display:block;font-size:16px;margin-bottom:6px}
+  .trust-item span{font-size:13.5px;color:var(--ivory-dim)}
+
+  /* ---------- About ---------- */
+  .about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:var(--sp-6);align-items:center}
+  .about-portrait{border-radius:var(--radius-md);overflow:hidden;aspect-ratio:3/4;border:1px solid var(--line)}
+  .about-portrait img{width:100%;height:100%;object-fit:cover;filter:grayscale(.15)}
+  .about-quote{font-size:19px;line-height:1.85;color:var(--ivory-dim);margin:var(--sp-3) 0 var(--sp-4)}
+  .about-quote::before{content:"«";color:var(--gold);font-size:26px}
+  .about-quote::after{content:"»";color:var(--gold);font-size:26px}
+  .about-facts{display:flex;gap:var(--sp-4);flex-wrap:wrap}
+  .about-facts div{font-size:13.5px;color:var(--ivory-dim);display:flex;align-items:center;gap:8px}
+  .about-facts svg{width:16px;height:16px;stroke:var(--gold)}
+
+  /* ---------- Articles ---------- */
+  .articles-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--sp-4)}
+  .article-card{border:1px solid var(--line);border-radius:var(--radius-md);overflow:hidden;transition:border-color .3s}
+  .article-card:hover{border-color:var(--gold)}
+  .article-img{aspect-ratio:16/10;overflow:hidden}
+  .article-img svg{width:100%;height:100%}
+  .article-body{padding:var(--sp-3)}
+  .article-meta{display:flex;gap:12px;font-size:12px;color:var(--gold);margin-bottom:10px}
+  .article-body h3{font-size:16.5px;font-weight:600;line-height:1.5;margin-bottom:8px}
+  .article-body p{font-size:13.5px;color:var(--ivory-dim)}
+
+  /* ---------- Contact ---------- */
+  .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--radius-md);overflow:hidden}
+  .contact-info,.map-card{background:var(--navy-950);padding:var(--sp-5)}
+  .contact-row{display:flex;gap:16px;align-items:flex-start;margin-bottom:var(--sp-3)}
+  .contact-row svg{width:20px;height:20px;stroke:var(--gold);flex-shrink:0;margin-top:2px}
+  .contact-row b{display:block;font-size:14.5px;margin-bottom:4px}
+  .contact-row span{font-size:14px;color:var(--ivory-dim)}
+  .notice-box{margin-top:var(--sp-3);padding:14px 16px;border:1px solid var(--line);border-radius:var(--radius-sm);font-size:13.5px;color:var(--ivory-dim)}
+  .map-card{display:flex;flex-direction:column;justify-content:center;position:relative;background:var(--navy-900)}
+  .map-card svg.map-pattern{position:absolute;inset:0;width:100%;height:100%;opacity:.5}
+  .map-pin{width:44px;height:44px;border-radius:50%;background:var(--gold);display:flex;align-items:center;justify-content:center;margin-bottom:var(--sp-3);position:relative;z-index:1}
+  .map-pin svg{width:20px;height:20px;stroke:var(--navy-950)}
+  .map-card b{position:relative;z-index:1;font-size:16px;display:block;margin-bottom:6px}
+  .map-card span{position:relative;z-index:1;font-size:13.5px;color:var(--ivory-dim);display:block;margin-bottom:var(--sp-3)}
+
+  /* ---------- Footer ---------- */
+  footer{background:var(--navy-900);border-top:1px solid var(--line);padding:var(--sp-6) 0 var(--sp-3)}
+  .footer-grid{display:grid;grid-template-columns:1.3fr .8fr .8fr 1fr;gap:var(--sp-5)}
+  .footer-brand .brand{margin-bottom:14px}
+  .footer-brand p{font-size:13.5px;color:var(--ivory-dim);max-width:34ch}
+  .footer-col h4{font-size:13.5px;color:var(--gold-soft);margin-bottom:16px;font-weight:600}
+  .footer-col a,.footer-col span{display:block;font-size:13.5px;color:var(--ivory-dim);margin-bottom:10px}
+  .footer-col a:hover{color:var(--gold)}
+  .footer-social{display:flex;gap:12px;margin-top:16px}
+  .footer-social a{width:36px;height:36px;border:1px solid var(--line);border-radius:50%;display:flex;align-items:center;justify-content:center}
+  .footer-social a:hover{border-color:var(--gold)}
+  .footer-social svg{width:15px;height:15px;stroke:var(--ivory-dim)}
+  .footer-bottom{margin-top:var(--sp-5);padding-top:var(--sp-3);border-top:1px solid var(--line);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:12.5px;color:var(--ivory-dim)}
+  .footer-bottom a{color:var(--gold-soft)}
+
+  /* ---------- Video modal ---------- */
+  .modal{position:fixed;inset:0;z-index:300;display:flex;align-items:center;justify-content:center;padding:var(--sp-3);
+    background:rgba(7,11,20,.9);opacity:0;visibility:hidden;transition:opacity .35s var(--ease),visibility 0s .35s}
+  .modal.open{opacity:1;visibility:visible;transition:opacity .35s var(--ease)}
+  .modal-box{max-width:920px;width:100%;position:relative}
+  .modal-close{position:absolute;top:-46px;left:0;width:40px;height:40px;border:1px solid var(--line);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:18px}
+  .modal-placeholder{aspect-ratio:16/9;border-radius:var(--radius-md);overflow:hidden;position:relative;border:1px solid var(--line)}
+  .modal-placeholder img{width:100%;height:100%;object-fit:cover;object-position:top center;opacity:.55}
+  .modal-placeholder-text{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:10px;padding:var(--sp-3)}
+  .modal-placeholder-text b{font-size:18px}
+  .modal-placeholder-text span{font-size:13.5px;color:var(--ivory-dim);max-width:38ch}
+
+  /* ---------- Responsive ---------- */
+  @media (max-width:1020px){
+    nav.primary-nav,.header-cta .btn-ghost{display:none}
+    .menu-toggle{display:flex}
+    .hero-grid,.video-block,.about-grid{grid-template-columns:1fr;gap:var(--sp-5)}
+    .hero-portrait{order:-1;max-width:420px}
+    .services-grid{grid-template-columns:repeat(2,1fr)}
+    .trust-grid{grid-template-columns:repeat(2,1fr)}
+    .trust-item{border-inline-start:none;border-top:1px solid var(--line)}
+    .trust-item:first-child{border-top:none}
+    .articles-grid{grid-template-columns:1fr}
+    .contact-grid{grid-template-columns:1fr}
+    .footer-grid{grid-template-columns:1fr 1fr}
+  }
+  @media (max-width:620px){
+    .services-grid{grid-template-columns:1fr}
+    .trust-grid{grid-template-columns:1fr}
+    .footer-grid{grid-template-columns:1fr}
+    .hero-actions .btn{width:100%;justify-content:center}
+    .case-card{flex:0 0 78vw}
+    h1.hero-title{font-size:32px}
+  }
+</style>
+</head>
+<body>
+
+<header id="siteHeader">
+  <div class="wrap header-row">
+    <a href="#" class="brand" aria-label="صفحه اصلی دکتر علی مرتضوی">
+      <span class="brand-mark">AM</span>
+      <span class="brand-text"><b>دکتر علی مرتضوی</b><span>جراح فک و صورت | دندانپزشک</span></span>
+    </a>
+    <nav class="primary-nav" aria-label="ناوبری اصلی">
+      <a href="#home">خانه</a>
+      <a href="#about">درباره دکتر</a>
+      <a href="#services">خدمات</a>
+      <a href="#cases">نمونه‌کارها</a>
+      <a href="#articles">مقالات</a>
+      <a href="#contact">تماس با ما</a>
+    </nav>
+    <div class="header-cta">
+      <a href="tel:04135575220" class="btn btn-ghost">تماس با مطب</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="باز کردن منو" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<div class="mobile-nav" id="mobileNav">
+  <button class="mobile-nav-close" id="menuClose" aria-label="بستن منو">✕</button>
+  <a href="#home">خانه</a>
+  <a href="#about">درباره دکتر</a>
+  <a href="#services">خدمات</a>
+  <a href="#cases">نمونه‌کارها</a>
+  <a href="#articles">مقالات</a>
+  <a href="#contact">تماس با ما</a>
+  <div class="mobile-nav-foot">
+    تبریز، ۱۷ شهریور جدید، برج سپید، طبقه ۸ — <a href="tel:04135575220">۰۴۱ ۳۵۵۷ ۵۲۲۰</a>
+  </div>
+</div>
+
+<main id="home">
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <p class="eyebrow">دکتر علی مرتضوی</p>
+        <h1 class="hero-title">دقت علمی، <em>نگاه انسانی</em></h1>
+        <p class="hero-sub">جراحی فک و صورت با تمرکز بر عملکرد، تناسب و نتیجه‌ای طبیعی — طراحی‌شده متناسب با آناتومی و چهره هر بیمار.</p>
+        <div class="hero-actions">
+          <a href="#cases" class="btn btn-gold">مشاهده نمونه‌کارها</a>
+          <a href="#about" class="btn btn-ghost">معرفی دکتر</a>
+        </div>
+        <div class="hero-meta">
+          <div><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M12 2 4 6v6c0 5 4 8 8 10 4-2 8-5 8-10V6l-8-4z"/></svg>متخصص جراحی فک و صورت</div>
+          <div><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M4 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><circle cx="10" cy="7" r="3"/></svg>دندانپزشک</div>
+        </div>
+      </div>
+      <div class="hero-portrait">
+        <div class="hero-portrait-frame">
+          <img src="assets/doctor-portrait.jpg" alt="پرتره دکتر علی مرتضوی">
+          <div class="hero-portrait-caption">
+            <div><b>دکتر علی مرتضوی</b><span>جراح فک و صورت، دندانپزشک</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-cue"><span>اسکرول کنید</span><div class="line"></div></div>
+  </section>
+
+  <!-- Intro video -->
+  <section class="pad" aria-labelledby="video-heading">
+    <div class="wrap video-block">
+      <div class="video-card" id="videoOpen" role="button" tabindex="0" aria-label="پخش ویدئوی معرفی دکتر مرتضوی">
+        <img src="assets/doctor-portrait.jpg" alt="ویدئوی معرفی دکتر علی مرتضوی">
+        <span class="play-btn"><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8V4z"/></svg></span>
+        <div class="video-meta"><span>ویدئوی معرفی</span><span>۰۲:۴۸</span></div>
+      </div>
+      <div class="video-copy">
+        <p class="eyebrow">آشنایی با دکتر</p>
+        <h2 id="video-heading" style="font-size:28px;font-weight:700;line-height:1.4">آشنایی با دکتر علی مرتضوی</h2>
+        <p>در این ویدئو، دکتر مرتضوی رویکرد درمانی، فلسفه دقت آناتومیک و اهمیت نتیجه‌ای طبیعی و هماهنگ با چهره بیمار را شرح می‌دهد.</p>
+        <div class="video-facts">
+          <div><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M12 2 4 6v6c0 5 4 8 8 10 4-2 8-5 8-10V6l-8-4z"/></svg>متخصص جراحی فک و صورت</div>
+          <div><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M4 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><circle cx="10" cy="7" r="3"/></svg>دندانپزشک</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="pad" id="services" aria-labelledby="services-heading">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">خدمات تخصصی</p>
+        <h2 id="services-heading">تمرکز بر عملکرد، تناسب و نتیجه طبیعی</h2>
+      </div>
+    </div>
+    <div class="wrap" style="padding:0">
+      <div class="services-grid">
+        <div class="service-card">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.3"><path d="M4 12c0-5 4-9 8-9s8 4 8 9-4 9-8 9-8-4-8-9z"/><path d="M9 10c1-2 5-2 6 0"/></svg>
+          <h3>جراحی فک و صورت</h3>
+          <p>اصلاح ناهنجاری‌های فکی و بهبود عملکرد و تناسب چهره.</p>
+        </div>
+        <div class="service-card">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.3"><path d="M12 3c-2 2-3 5-3 8 0 3 1 5 1 7 0 1.5 1 2.5 2 2.5s2-1 2-2.5"/><path d="M12 3c2 2 3 5 3 8"/></svg>
+          <h3>جراحی بینی</h3>
+          <p>طراحی طبیعی با حفظ هویت ظاهری و عملکرد تنفسی بیمار.</p>
+        </div>
+        <div class="service-card">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.3"><path d="M6 4c4 2 8 2 12 0M6 20c4-2 8-2 12 0M6 4v16M18 4v16"/></svg>
+          <h3>جراحی‌های ترمیمی</h3>
+          <p>اصلاح و بازسازی عوارض و ناهنجاری‌های ناحیه فک و صورت.</p>
+        </div>
+        <div class="service-card">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.3"><rect x="9" y="3" width="6" height="8" rx="2"/><path d="M12 11v10M8 21h8"/></svg>
+          <h3>ایمپلنت و دندانپزشکی</h3>
+          <p>بازگرداندن ساختار و عملکرد طبیعی دندان‌ها.</p>
+        </div>
+        <div class="service-card">
+          <svg class="service-icon" viewBox="0 0 24 24" fill="none" stroke-width="1.3"><path d="M4 12c2-4 6-6 8-6s6 2 8 6c-2 4-6 6-8 6s-6-2-8-6z"/><circle cx="12" cy="12" r="2"/></svg>
+          <h3>جراحی‌های زیبایی صورت</h3>
+          <p>هماهنگ‌سازی اجزای صورت با حفظ طبیعی‌بودن نتیجه.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cases / before-after -->
+  <section class="pad" id="cases" aria-labelledby="cases-heading">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">نمونه‌کارها</p>
+        <h2 id="cases-heading">نمونه‌کارهای قبل و بعد</h2>
+        <p>موارد نمایش‌داده‌شده در این بخش نمونه‌های دمو هستند تا زمان بارگذاری تصاویر واقعی بیماران (با رضایت ایشان) جایگزین شوند.</p>
+      </div>
+      <div class="cases-strip">
+        <div class="case-card">
+          <div class="ba-slider" data-ba>
+            <svg class="ph-face ba-before" viewBox="0 0 300 375" preserveAspectRatio="xMidYMid slice"><rect width="300" height="375" fill="#1b2740"/><path d="M150 60c-40 0-65 40-65 90 0 55 30 100 65 115 35-15 65-60 65-115 0-50-25-90-65-90z" fill="none" stroke="#5f7691" stroke-width="1.5"/><circle cx="118" cy="150" r="3" fill="#c9a15e"/><circle cx="182" cy="150" r="3" fill="#c9a15e"/></svg>
+            <div class="ba-after-wrap" style="width:50%">
+              <svg class="ph-face ba-after" viewBox="0 0 300 375" preserveAspectRatio="xMidYMid slice"><rect width="300" height="375" fill="#141f34"/><path d="M150 55c-38 0-62 38-62 88 0 56 29 102 62 118 33-16 62-62 62-118 0-50-24-88-62-88z" fill="none" stroke="#c9a15e" stroke-width="1.5"/><circle cx="120" cy="148" r="3" fill="#c9a15e"/><circle cx="180" cy="148" r="3" fill="#c9a15e"/></svg>
+            </div>
+            <div class="ba-handle" style="right:50%" data-handle>
+              <div class="ba-handle-knob"><svg viewBox="0 0 24 24" fill="none" stroke="#070b14" stroke-width="2"><path d="M9 6l-5 6 5 6M15 6l5 6-5 6"/></svg></div>
+            </div>
+            <span class="ba-label before">قبل</span>
+            <span class="ba-label after">بعد</span>
+            <span class="ba-demo-tag">نمونه دمو — جایگزین با تصویر واقعی بیمار</span>
+          </div>
+          <div class="case-info"><b>جراحی بینی</b><span>رینوپلاستی</span></div>
+        </div>
+        <div class="case-card">
+          <div class="ba-slider" data-ba>
+            <svg class="ph-face ba-before" viewBox="0 0 300 375" preserveAspectRatio="xMidYMid slice"><rect width="300" height="375" fill="#1b2740"/><path d="M150 60c-40 0-65 40-65 90 0 55 30 100 65 115 35-15 65-60 65-115 0-50-25-90-65-90z" fill="none" stroke="#5f7691" stroke-width="1.5"/><path d="M110 210q40 20 80 0" fill="none" stroke="#5f7691" stroke-width="1.2"/></svg>
+            <div class="ba-after-wrap" style="width:50%">
+              <svg class="ph-face ba-after" viewBox="0 0 300 375" preserveAspectRatio="xMidYMid slice"><rect width="300" height="375" fill="#141f34"/><path d="M150 55c-38 0-62 38-62 88 0 56 29 102 62 118 33-16 62-62 62-118 0-50-24-88-62-88z" fill="none" stroke="#c9a15e" stroke-width="1.5"/><path d="M112 208q38 18 76 0" fill="none" stroke="#c9a15e" stroke-width="1.2"/></svg>
+            </div>
+            <div class="ba-handle" style="right:50%" data-handle>
+              <div class="ba-handle-knob"><svg viewBox="0 0 24 24" fill="none" stroke="#070b14" stroke-width="2"><path d="M9 6l-5 6 5 6M15 6l5 6-5 6"/></svg></div>
+            </div>
+            <span class="ba-label before">قبل</span>
+            <span class="ba-label after">بعد</span>
+            <span class="ba-demo-tag">نمونه دمو — جایگزین با تصویر واقعی بیمار</span>
+          </div>
+          <div class="case-info"><b>جراحی فک</b><span>اصلاح فانکشنال</span></div>
+        </div>
+        <div class="case-card">
+          <div class="ba-slider" data-ba>
+            <svg class="ph-face ba-before" viewBox="0 0 300 375" preserveAspectRatio="xMidYMid slice"><rect width="300" height="375" fill="#1b2740"/><rect x="115" y="180" width="70" height="26" rx="4" fill="none" stroke="#5f7691" stroke-width="1.5"/></svg>
+            <div class="ba-after-wrap" style="width:50%">
+              <svg class="ph-face ba-after" viewBox="0 0 300 375" preserveAspectRatio="xMidYMid slice"><rect width="300" height="375" fill="#141f34"/><rect x="112" y="178" width="76" height="28" rx="5" fill="none" stroke="#c9a15e" stroke-width="1.5"/></svg>
+            </div>
+            <div class="ba-handle" style="right:50%" data-handle>
+              <div class="ba-handle-knob"><svg viewBox="0 0 24 24" fill="none" stroke="#070b14" stroke-width="2"><path d="M9 6l-5 6 5 6M15 6l5 6-5 6"/></svg></div>
+            </div>
+            <span class="ba-label before">قبل</span>
+            <span class="ba-label after">بعد</span>
+            <span class="ba-demo-tag">نمونه دمو — جایگزین با تصویر واقعی بیمار</span>
+          </div>
+          <div class="case-info"><b>ایمپلنت دندان</b><span>بازسازی عملکردی</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust -->
+  <section class="trust-strip">
+    <div class="wrap trust-grid">
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M12 2 4 6v6c0 5 4 8 8 10 4-2 8-5 8-10V6l-8-4z"/></svg>
+        <b>تخصص</b><span>تمرکز اختصاصی بر جراحی فک، صورت و دندانپزشکی</span>
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        <b>دقت آناتومیک</b><span>برنامه‌ریزی درمان متناسب با ساختار هر بیمار</span>
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M4 12h4l2-7 4 14 2-7h4"/></svg>
+        <b>رویکرد علمی</b><span>تصمیم‌گیری درمانی مبتنی بر شواهد بالینی</span>
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M4 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><circle cx="10" cy="7" r="3"/><path d="M17 21v-2a3.5 3.5 0 0 0-2-3.2"/></svg>
+        <b>پیگیری درمان</b><span>همراهی بیمار در مسیر بهبود پس از جراحی</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section class="pad light" id="about" aria-labelledby="about-heading">
+    <div class="wrap about-grid">
+      <div class="about-portrait">
+        <img src="assets/doctor-portrait.jpg" alt="دکتر علی مرتضوی در مطب">
+      </div>
+      <div>
+        <p class="eyebrow">درباره دکتر</p>
+        <h2 id="about-heading" style="font-size:30px;font-weight:700;margin-bottom:8px">دکتر علی مرتضوی</h2>
+        <p class="ivory-dim-txt" style="margin-bottom:18px">متخصص جراحی فک و صورت، دندانپزشک</p>
+        <p class="about-quote">رویکرد من در جراحی، ترکیبی از دقت علمی، شناخت دقیق آناتومی و توجه به نتیجه‌ای طبیعی و هماهنگ است.</p>
+        <div class="about-facts">
+          <div><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M12 2 4 6v6c0 5 4 8 8 10 4-2 8-5 8-10V6l-8-4z"/></svg>متخصص جراحی فک و صورت</div>
+          <div><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M4 21v-2a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v2"/><circle cx="10" cy="7" r="3"/></svg>دندانپزشک</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Articles -->
+  <section class="pad" id="articles" aria-labelledby="articles-heading">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">مقالات</p>
+        <h2 id="articles-heading">آخرین مطالب و راهنماهای درمانی</h2>
+      </div>
+      <div class="articles-grid">
+        <article class="article-card">
+          <div class="article-img"><svg viewBox="0 0 400 250"><rect width="400" height="250" fill="#121c30"/><path d="M0 190 Q100 130 200 170 T400 150" fill="none" stroke="#c9a15e" stroke-width="1.5"/></svg></div>
+          <div class="article-body">
+            <div class="article-meta"><span>جراحی فک و صورت</span><span>۶ دقیقه مطالعه</span></div>
+            <h3>مراقبت‌های بعد از جراحی فک و صورت</h3>
+            <p>نکاتی که روند بهبود پس از جراحی را کوتاه‌تر و راحت‌تر می‌کند.</p>
+          </div>
+        </article>
+        <article class="article-card">
+          <div class="article-img"><svg viewBox="0 0 400 250"><rect width="400" height="250" fill="#121c30"/><circle cx="200" cy="125" r="60" fill="none" stroke="#c9a15e" stroke-width="1.5"/></svg></div>
+          <div class="article-body">
+            <div class="article-meta"><span>جراحی بینی</span><span>۵ دقیقه مطالعه</span></div>
+            <h3>تفاوت جراحی زیبایی و عملکردی بینی</h3>
+            <p>چه زمانی رینوپلاستی جنبه زیبایی دارد و چه زمانی عملکردی است.</p>
+          </div>
+        </article>
+        <article class="article-card">
+          <div class="article-img"><svg viewBox="0 0 400 250"><rect width="400" height="250" fill="#121c30"/><rect x="150" y="80" width="100" height="90" rx="10" fill="none" stroke="#c9a15e" stroke-width="1.5"/></svg></div>
+          <div class="article-body">
+            <div class="article-meta"><span>ایمپلنت دندان</span><span>۷ دقیقه مطالعه</span></div>
+            <h3>ایمپلنت دندان؛ از تشخیص تا درمان</h3>
+            <p>مراحل ارزیابی، برنامه‌ریزی و اجرای درمان ایمپلنت دندان.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="pad" id="contact" aria-labelledby="contact-heading">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">تماس با ما</p>
+        <h2 id="contact-heading">تماس با مطب</h2>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="contact-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div><b>آدرس مطب</b><span>تبریز، ۱۷ شهریور جدید، روبروی بستنی وحید، برج سپید، طبقه ۸</span></div>
+          </div>
+          <div class="contact-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M3 5c0 9 7 16 16 16l3-5-6-2-2 2c-3-1-5-3-6-6l2-2-2-6-5 3z"/></svg>
+            <div><b>تلفن مطب</b><span dir="ltr" style="unicode-bidi:plaintext">۰۴۱ ۳۵۵۷ ۵۲۲۰</span></div>
+          </div>
+          <div class="notice-box">لطفاً قبل از حضور در مطب با منشی هماهنگ شوید.</div>
+          <div style="display:flex;gap:14px;margin-top:22px">
+            <a href="tel:04135575220" class="btn btn-gold">تماس تلفنی</a>
+          </div>
+        </div>
+        <div class="map-card">
+          <svg class="map-pattern" viewBox="0 0 400 400" preserveAspectRatio="none"><g stroke="#1b2740" stroke-width="1"><line x1="0" y1="80" x2="400" y2="80"/><line x1="0" y1="160" x2="400" y2="160"/><line x1="0" y1="240" x2="400" y2="240"/><line x1="0" y1="320" x2="400" y2="320"/><line x1="80" y1="0" x2="80" y2="400"/><line x1="160" y1="0" x2="160" y2="400"/><line x1="240" y1="0" x2="240" y2="400"/><line x1="320" y1="0" x2="320" y2="400"/></g></svg>
+          <div class="map-pin"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+          <b>برج سپید، طبقه ۸</b>
+          <span>تبریز، ۱۷ شهریور جدید، روبروی بستنی وحید</span>
+          <a href="https://www.google.com/maps/search/?api=1&query=%D8%AA%D8%A8%D8%B1%DB%8C%D8%B2%20%DB%B1%DB%B7%20%D8%B4%D9%87%D8%B1%DB%8C%D9%88%D8%B1%20%D8%AC%D8%AF%DB%8C%D8%AF%20%D8%A8%D8%B1%D8%AC%20%D8%B3%D9%BE%DB%8C%D8%AF" target="_blank" rel="noopener" class="btn btn-ghost" style="width:fit-content;position:relative;z-index:1">مشاهده مسیر روی نقشه</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <div class="brand"><span class="brand-mark">AM</span><span class="brand-text"><b>دکتر علی مرتضوی</b><span>جراح فک و صورت | دندانپزشک</span></span></div>
+      <p>دقت علمی، نگاه انسانی و رویکردی متناسب با آناتومی و چهره هر بیمار.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="اینستاگرام" aria-disabled="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg></a>
+        <a href="#" aria-label="تلگرام" aria-disabled="true"><svg viewBox="0 0 24 24" fill="none" stroke-width="1.5"><path d="M22 3 2 11l6 2 2 6 3-4 5 4 4-16z"/></svg></a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>صفحات</h4>
+      <a href="#home">خانه</a><a href="#about">درباره دکتر</a><a href="#services">خدمات</a><a href="#cases">نمونه‌کارها</a>
+    </div>
+    <div class="footer-col">
+      <h4>خدمات</h4>
+      <span>جراحی فک و صورت</span><span>جراحی بینی</span><span>ایمپلنت دندان</span><span>جراحی‌های ترمیمی</span>
+    </div>
+    <div class="footer-col">
+      <h4>تماس</h4>
+      <span>تبریز، ۱۷ شهریور جدید، برج سپید، طبقه ۸</span>
+      <a href="tel:04135575220" dir="ltr" style="unicode-bidi:plaintext">۰۴۱ ۳۵۵۷ ۵۲۲۰</a>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <span>© ۱۴۰۴ دکتر علی مرتضوی. تمامی حقوق محفوظ است.</span>
+    <span>طراح و توسعه وب‌سایت: <a href="#">رضا علی‌یان</a></span>
+  </div>
+</footer>
+
+<!-- Video modal -->
+<div class="modal" id="videoModal" role="dialog" aria-modal="true" aria-label="ویدئوی معرفی">
+  <div class="modal-box">
+    <button class="modal-close" id="videoClose" aria-label="بستن ویدئو">✕</button>
+    <div class="modal-placeholder">
+      <img src="assets/doctor-portrait.jpg" alt="">
+      <div class="modal-placeholder-text">
+        <b>ویدئوی معرفی به‌زودی در این بخش قرار می‌گیرد</b>
+        <span>این جایگاه برای پخش فایل ویدئویی رسمی دکتر مرتضوی آماده شده و بدون نیاز به تغییر طراحی جایگزین خواهد شد.</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  // Header scroll state
+  var header = document.getElementById('siteHeader');
+  var onScroll = function(){
+    header.classList.toggle('scrolled', window.scrollY > 40);
+  };
+  document.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+
+  // Mobile nav
+  var mobileNav = document.getElementById('mobileNav');
+  var menuToggle = document.getElementById('menuToggle');
+  var menuClose = document.getElementById('menuClose');
+  function openMenu(){ mobileNav.classList.add('open'); menuToggle.setAttribute('aria-expanded','true'); document.body.style.overflow='hidden'; }
+  function closeMenu(){ mobileNav.classList.remove('open'); menuToggle.setAttribute('aria-expanded','false'); document.body.style.overflow=''; }
+  menuToggle.addEventListener('click', openMenu);
+  menuClose.addEventListener('click', closeMenu);
+  mobileNav.querySelectorAll('a').forEach(function(a){ a.addEventListener('click', closeMenu); });
+
+  // Video modal
+  var videoModal = document.getElementById('videoModal');
+  var videoOpen = document.getElementById('videoOpen');
+  var videoClose = document.getElementById('videoClose');
+  function openVideo(){ videoModal.classList.add('open'); document.body.style.overflow='hidden'; }
+  function closeVideo(){ videoModal.classList.remove('open'); document.body.style.overflow=''; }
+  videoOpen.addEventListener('click', openVideo);
+  videoOpen.addEventListener('keydown', function(e){ if(e.key==='Enter'||e.key===' '){ e.preventDefault(); openVideo(); } });
+  videoClose.addEventListener('click', closeVideo);
+  videoModal.addEventListener('click', function(e){ if(e.target === videoModal) closeVideo(); });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape'){ closeVideo(); closeMenu(); }
+  });
+
+  // Before / after sliders
+  document.querySelectorAll('[data-ba]').forEach(function(root){
+    var handle = root.querySelector('[data-handle]');
+    var afterWrap = root.querySelector('.ba-after-wrap');
+    var dragging = false;
+
+    function setPct(pct){
+      pct = Math.max(0, Math.min(100, pct));
+      afterWrap.style.width = pct + '%';
+      handle.style.right = pct + '%';
+      handle.setAttribute('aria-valuenow', Math.round(pct));
+    }
+    function pctFromClientX(clientX){
+      var rect = root.getBoundingClientRect();
+      var xFromRight = rect.right - clientX; // RTL: 0% at right edge
+      return (xFromRight / rect.width) * 100;
+    }
+    handle.setAttribute('role','slider');
+    handle.setAttribute('tabindex','0');
+    handle.setAttribute('aria-valuemin','0');
+    handle.setAttribute('aria-valuemax','100');
+    handle.setAttribute('aria-valuenow','50');
+    handle.setAttribute('aria-label','مقایسه تصویر قبل و بعد');
+
+    handle.addEventListener('pointerdown', function(e){
+      dragging = true; handle.setPointerCapture(e.pointerId);
+    });
+    root.addEventListener('pointermove', function(e){
+      if(!dragging) return;
+      setPct(pctFromClientX(e.clientX));
+    });
+    handle.addEventListener('pointerup', function(){ dragging = false; });
+    handle.addEventListener('pointercancel', function(){ dragging = false; });
+
+    handle.addEventListener('keydown', function(e){
+      var current = parseFloat(handle.getAttribute('aria-valuenow')) || 50;
+      if(e.key === 'ArrowLeft'){ setPct(current + 4); e.preventDefault(); }
+      if(e.key === 'ArrowRight'){ setPct(current - 4); e.preventDefault(); }
+      if(e.key === 'Home'){ setPct(0); e.preventDefault(); }
+      if(e.key === 'End'){ setPct(100); e.preventDefault(); }
+    });
+  });
+})();
+</script>
+</body>
+</html>
